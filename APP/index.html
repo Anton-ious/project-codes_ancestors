@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/Nav.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Protest+Riot&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- القائمة الجانبية -->
+    <aside id="sidebar" class="sidebar">
+        <div class="aside-content">
+            <div class="logo-section">
+                <img src="images/logo.jpg" alt="Plan IT Logo" class="logo-img">
+                <h5>Plan IT</h5>
+            </div>
+            
+            <div class="subtitle">
+                <p>Creativity</p>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-link active">
+                    <img src="./assets\navigation\dark mode\House_03.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\House_03.png" class="nav-icon light-icon">
+                    <span class="nav-text">Home page</span>
+                </a>
+                
+                <a href="./task.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Note_Edit.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Note_Edit.png" class="nav-icon light-icon">
+                    <span class="nav-text">My Task</span>
+                </a>
+                
+                <a href="./habit-trucker.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Check_All.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Check_All.png" class="nav-icon light-icon">
+                    <span class="nav-text">Habit Trucker</span>
+                </a>
+                
+                <a href="./Study.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Book.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Book.png" class="nav-icon light-icon">
+                    <span class="nav-text">Study Planner</span>
+                </a>
+                
+                <a href="./play-linguist.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Puzzle.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Puzzle.png" class="nav-icon light-icon">
+                    <span class="nav-text">Play</span>
+                </a>
+                
+                <a href="./Idea submission/creativity.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Bulb.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Bulb.png" class="nav-icon light-icon">
+                    <span class="nav-text">Creativity</span>
+                </a>
+                
+                <a href="./Setting.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Settings_Future.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Settings_Future.png" class="nav-icon light-icon">
+                    <span class="nav-text">Settings</span>
+                </a>
+            </nav>
+            
+            <button class="logout-btn">
+                <img src="./assets\navigation\dark mode\Log_Out.png" class="logout-icon dark-icon">
+                <img src="./assets\navigation\white mode\Log_Out.png" class="logout-icon light-icon">
+                <span class="logout-text">Log out</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- المحتوى الرئيسي -->
+    <main class="main-content">
+        <header class="main-header">
+            <!-- زر التوجيه بجانب العنوان -->
+            <div class="title-section">
+                <button id="toggle-nav" class="toggle-nav-btn">☰</button>
+                <h2 class="page-title">Home</h2>
+            </div>
+            
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="search" name="search" class="search-input" placeholder="Search...">
+                    <img src="./assets\Header\User\Search_Magnifying_Glass.png" class="search-icon" alt="Search">
+                </div>
+                
+                <div class="user-actions">
+                    <div class="mode-toggle">
+                        <img src="./images/Sun-b.png" alt="light mode" class="mode-icon sun">
+                        <img src="./images/moon.png" alt="dark mode" class="mode-icon moon">
+                    </div>
+                    
+                    
+                    <div class="dropdown">
+                        <div class="user-profile dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/User_01.png" alt="user profile" class="user-avatar">
+                            <span class="user-name">John Doe</span>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./Setting.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="./Setting.html">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./Setting.html">Points</a></li>
+                            <li><a class="dropdown-item" href="./Setting.html">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <!-- Content -->
+        <div class="content-container">
+            <div class="stats-container">
+                <div class="d-flex flex-wrap stats-row">
+                    <div class="d-flex align-items-center stat-box" id="completed">
+                        <img src="./assets\Header\User\Vector 1.png" class="stat-icon" alt="Completed Icon">
+                        <div class="d-grid stat-info">
+                            <i><span>Completed</span></i>
+                            <span data-counter="completed">20</span>
+                        </div>
+                    </div>   
+
+                    <div class="d-flex align-items-center stat-box" id="progress">
+                        <img src="./assets\Header\User\Vector.png" class="stat-icon" alt="Completed Icon">
+                        <div class="d-grid stat-info">
+                            <i><span>In_progress</span></i>
+                            <span data-counter="in-progress">5</span>
+                        </div>
+                    </div> 
+
+                    <div class="d-flex align-items-center stat-box" id="point">
+                        <img src="./assets\Header\User\$.png" class="stat-icon" alt="Completed Icon">
+                        <div class="d-grid stat-info">
+                            <i><span>points</span></i>
+                            <span>$ 20</span>
+                        </div>
+                    </div> 
+                </div>
+
+                <div class="cards-container">
+                    <div class="main-cards">
+                        <!-- play card -->
+                        <div class="card-box" id="play">
+                            <div class="d-flex align-items-center card-header">
+                                <i class="fas fa-gamepad card-icon"></i>
+                                <h4 class="mx-2">Play</h4>
+                            </div>
+
+                            <img src="./images/pol (2).png" alt="" class="shape shape1">
+                            <img src="./images/pol (1).png" alt="" class="shape shape2">
+                            <img src="./images/pol (3).png" alt="" class="shape shape3">
+                        
+                            <img src="./assets/main/cardimg1.png" alt="logo" class="card-main-img">
+                            <h5 dir="ltr">|Games</h5>
+                        
+                            <div class="d-flex card-controls">
+                                <img src="./images/controller.png" alt="play" class="play-img">
+                                <!-- <i class="fas fa-gamepad fa-2x me-3 mx-5"></i> -->
+                                <div class="control-buttons ms-auto">
+                                    <button class="control-btn bu-1">
+                                        X / O
+                                    </button>
+                                    <button class="control-btn bu-2">
+                                        Linguist
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <!-- study card -->
+                        <div class="card-box" id="study">
+                            <div class="d-flex align-items-center justify-content-center card-header">
+                                <h4 class="mx-2 text-center">Let`s study</h4>
+                            </div>
+
+                            <div class="shapes">
+                                <img src="./images/Polygon 23.png" alt="" class="shape shape1">
+                                <img src="./images/Polygon 24.png" alt="" class="shape shape2">
+                                <img src="./images/Polygon 25.png" alt="" class="shape shape3">
+                            </div>
+                        
+                            <img src="./images/1f49cb48ea8d550b1491cb13f30dc9b6 3.png" alt="logo" class="card-main-img study-img">
+                        
+                            <div class="d-grid lessons">
+                                <div class="d-flex justify-content-between align-items-center lesson">
+                                    <p class="my-auto">lessons Completed</p>
+                                    <button class="lesson-btn bu-1">Complete lessons</button>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center course">
+                                    <p class="my-auto">tasks Completed</p>
+                                    <button class="lesson-btn bu-2">Complete tasks</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- creativity card -->
+                    <div class="card-box" id="creativity">
+                        <div class="Shape1">
+                            <img src="./images/Ellipse 1090.png" alt="shape" class="shape shape1">
+                        </div>
+
+                        <div class="Shape2">
+                            <img src="./images/Ellipse 1094.png" alt="shape" class="shape shape2">
+                        </div>
+
+                        <img src="./images/Polygon 26.png" alt="shape" class="shape shape1-2">
+                        <img src="./images/Polygon 27.png" alt="shape" class="shape shape2-2">
+                    
+                        <div class="d-flex align-items-center justify-content-center card-header">
+                            <h4 class="mx-2 text-center">Creativity</h4>
+                        </div>
+                    
+                        <img src="./images/70497804cdcb767f24f636892c3a9619 2.png" alt="creativity" class="card-main-img">
+
+                        <p class="card-text">Let the world know who you are and what your ideas are to solve current problems</p>
+
+                        <button class="creativity-btn" onclick="creativity()">
+                            <i class="fas fa-lightbulb me-2"></i>start now
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="right-sidebar">
+                <div class="sidebar-card timer-card">
+                    <div class="card-header">
+                        <p><i class="fas fa-clock me-2"></i>Timer</p>
+                        <button class="more-btn">
+                            <i class="fas fa-ellipsis-v"></i>
+                        </button>
+                    </div>
+
+                    <div class="timer-content">
+                        <h4>15:00:00</h4>
+                        <div class="timer-controls">
+                            <button class="timer-btn pause-btn">
+                                <i class="fas fa-pause"></i>
+                            </button>
+                            <button class="timer-btn play-btn">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="sidebar-card calendar-wrapper">
+                    <header>
+                        <p class="current-date"></p>
+                        <div class="icons">
+                            <span id="prev" class="material-icons"><</span>
+                            <span id="next" class="material-icons">></span>
+                        </div>
+                    </header>
+
+                    <div class="calendar">
+                        <ul class="weeks">
+                            <li>Sun</li>
+                            <li>Mon</li>
+                            <li>Tue</li>
+                            <li>Wed</li>
+                            <li>Thu</li>
+                            <li>Fri</li>
+                            <li>Sat</li>
+                        </ul>
+                        <ul class="days"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- welcome-bar -->
+
+    <div class="welcome-bar d-grid justify-content-center">
+        <p class="m-auto">Welcome to plan IT this place will make you learn, prepare and get new-skills</p>
+    </div>
+
+    
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth.js"></script>
+    <script type="module" src="./firebase/script.js"></script>
+    <script src="./js/nav.js"></script>
+    <script src="./js/home.js"></script>
+    <script src="js/task reject.js"></script>
+</body>
+</html>

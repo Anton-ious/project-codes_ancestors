@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plan IT - Task</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/Nav.css">
+    <link rel="stylesheet" href="css/task.css">
+</head>
+<body>
+    <!-- القائمة الجانبية -->
+    <aside id="sidebar" class="sidebar">
+        <div class="aside-content">
+            <div class="logo-section">
+                <img src="images/logo.jpg" alt="Plan IT Logo" class="logo-img">
+                <h5>Plan IT</h5>
+            </div>
+            
+            <div class="subtitle">
+                <p>Creativity</p>
+            </div>
+            
+            <nav class="nav-links">
+                <a href="./index.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\House_03.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\House_03.png" class="nav-icon light-icon">
+                    <span class="nav-text">Home page</span>
+                </a>
+                
+                <a href="#" class="nav-link active">
+                    <img src="./assets\navigation\dark mode\Note_Edit.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Note_Edit.png" class="nav-icon light-icon">
+                    <span class="nav-text">My Task</span>
+                </a>
+                
+                <a href="./habit-trucker.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Check_All.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Check_All.png" class="nav-icon light-icon">
+                    <span class="nav-text">Habit Trucker</span>
+                </a>
+                
+                <a href="./Study.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Book.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Book.png" class="nav-icon light-icon">
+                    <span class="nav-text">Study Planner</span>
+                </a>
+                
+                <a href="./play-linguist.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Puzzle.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Puzzle.png" class="nav-icon light-icon">
+                    <span class="nav-text">Play</span>
+                </a>
+                
+                <a href="./Idea submission/creativity.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Bulb.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Bulb.png" class="nav-icon light-icon">
+                    <span class="nav-text">Creativity</span>
+                </a>
+                
+                <a href="./Setting.html" class="nav-link">
+                    <img src="./assets\navigation\dark mode\Settings_Future.png" class="nav-icon dark-icon">
+                    <img src="./assets\navigation\white mode\Settings_Future.png" class="nav-icon light-icon">
+                    <span class="nav-text">Settings</span>
+                </a>
+            </nav>
+            
+            <button class="logout-btn">
+                <img src="./assets\navigation\dark mode\Log_Out.png" class="logout-icon dark-icon">
+                <img src="./assets\navigation\white mode\Log_Out.png" class="logout-icon light-icon">
+                <span class="logout-text">Log out</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <header class="main-header">
+            <div class="title-section">
+                <button id="toggle-nav" class="toggle-nav-btn">☰</button>
+                <h2 class="page-title">Task</h2>
+            </div>
+            
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="search" name="search" class="search-input" placeholder="Search...">
+                    <img src="./assets/Header/User/Search_Magnifying_Glass.png" class="search-icon" alt="Search">
+                </div>
+                
+                <div class="user-actions">
+                    <div class="mode-toggle">
+                        <img src="./images/Sun-b.png" alt="light mode" class="mode-icon sun">
+                        <img src="./images/moon.png" alt="dark mode" class="mode-icon moon">
+                    </div>
+                    
+                    <div class="dropdown">
+                        <div class="user-profile dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                            <img src="./images/User_01.png" alt="user profile" class="user-avatar">
+                            <span class="user-name">John Doe</span>
+                        </div>
+                        <ul class="dropdown-menu dropdown-menu-end dropdown-menu-dark">
+                            <li><a class="dropdown-item" href="./Setting.html">Setting</a></li>
+                            <li><a class="dropdown-item" href="./Setting.html">Profile</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="./Setting.html">Points</a></li>
+                            <li><a class="dropdown-item" href="./Setting.html">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <div class="content-area" id="content">
+            <div class="content-container">
+                <h1 class="page-main-title">Manage Tasks</h1>
+            
+                <!-- Task Creation Form -->
+                <div class="task-form-container">
+                    <div class="row g-4">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Main Title</label>
+                                <input type="text" class="form-control input-field" id="main-title" placeholder="Enter task title">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Sub Title</label>
+                                <input type="text" class="form-control input-field" id="sub-title" placeholder="Enter subtitle">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Description (Optional)</label>
+                                <textarea class="form-control input-field" id="task-description" placeholder="Enter task description (optional)" rows="2"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="form-label">Task Image</label>
+                                <div class="file-input-container">
+                                    <input type="file" class="form-control input-field" id="task-image" accept="image/*">
+                                    <span class="file-input-label">Choose Image</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12 d-flex align-items-end justify-content-end">
+                            <div class="create-btn-container">
+                                <button class="create-btn" onclick="createTask()">
+                                    <span class="btn-icon">+</span>
+                                    <span class="btn-text">Add New Challenge</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Dynamic Task List -->
+                <div id="task-list" class="row g-4">
+                    <!-- Tasks will be added here dynamically -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <!-- Custom Prompt Modal -->
+    <div id="custom-prompt" class="custom-prompt" style="display: none;">
+        <div class="prompt-content">
+            <h5 id="prompt-title"></h5>
+            <input type="text" id="prompt-input">
+            <div id="prompt-error" class="error-message"></div>
+            <div class="prompt-buttons">
+                <button id="prompt-cancel" class="task-btn btn-secondary">Cancel</button>
+                <button id="prompt-confirm" class="task-btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+    <!-- ضعه في نهاية ملف HTML قبل غلق </body> -->
+    <audio id="timer-sound" src="sound/videoplayback.mp3" preload="auto"></audio>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/task.js"></script>
+    <script src="js/task reject.js"></script>
+</body>
+</html>

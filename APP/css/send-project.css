@@ -1,0 +1,445 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #20202A;
+    color: #ffffff;
+}
+
+/*side*/
+
+/*اذهب الى صفحة nav*/
+
+/*main*/
+
+/*اذهب الى صفحة nav*/
+
+/*content*/
+
+#content {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    grid-gap: 50px;
+    position: relative;
+    /* left: 18%; */
+    padding-left: 14%;
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 20px;
+    margin-bottom: 10%;
+}
+
+
+/*shape*/
+
+.shape{
+    width: fit-content;
+    background: #31334463;
+    padding: 22px;
+    border-radius: 15px;
+    box-shadow: 3px 3px 7px black;
+}
+
+/*solution-place*/
+
+.solution-place{
+    background: #272935;
+    border-radius: 15px;
+    padding: 15px;
+    width: fit-content;
+    height: fit-content;
+    box-shadow: -2px 2px 8px 3px black;
+}
+
+.solution-place textarea{
+    background: #272935;
+    display: flex;
+    padding: 5px;
+    color:white;
+    border: 2px solid rgba(24, 99, 238, 0.254);
+    border-radius: 10px;
+}
+
+.solution-place #explain{
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.solution-place #explain label{
+    /* color: hsl(0, 0%, 50%); */
+    font-size: 18px;
+    font-family: Inter;
+    /* font-weight: 100; */
+}
+
+textarea::placeholder{
+    color: hsl(0, 0%, 50%);
+    display: flex;
+    text-align: center;
+    padding: 15%;
+    font-size: 20px;
+}
+
+.solution-place #explain input{
+    color: hsl(0, 0%, 50%);
+    font-size: 11px;
+    cursor: pointer;
+    margin-left: 14px;
+}
+
+/*contact-information*/
+
+.contact{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.contact input{
+    display: flex;
+    width: 350px;
+    padding: 15px;
+    border: 1px solid hsla(272, 88%, 46%, 0.434);
+    background: hsla(0, 0%, 0%, 70%);
+    border-radius: 14px;
+    
+}
+
+.contact input::placeholder{
+    color: hsl(0, 0%, 50%);
+    text-align: center;
+}
+
+.contact button{
+    color: hsl(0, 0%, 50%);
+    padding: 15px;
+    margin-top: 50px;
+    justify-self: center;
+    background: hsla(0, 0%, 0%, 70%);
+    border: 1px solid hsla(272, 88%, 46%, 0.434);
+    border-radius: 14px;
+}
+
+.hint{
+    border: 1px solid hsla(272, 88%, 46%, 0.368);
+    border-radius: 14px;
+    padding: 8px;
+    color: #8283DF;
+    width:90%;
+    font-size: 26px;
+    font-family: Inter;
+    text-align: center;
+}
+
+ .hint p{
+    width: 100%;
+}
+
+
+
+/*responsive 1054px*/
+
+@media (max-width: 1102px) and (min-width: 1055px) {
+    #content {
+        width: fit-content;
+        position: relative;
+        left: 6%;
+    }
+
+    .shape{
+        width: 85%;
+        height: fit-content;
+    }
+
+    .solution-place{
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea{
+        width: 100%;
+        height: fit-content;
+    }
+}
+
+
+@media (max-width: 1055px) and (min-width: 780px) {
+    #content {
+        position: relative;
+        left: 6%;
+    }
+
+    .shape {
+        width: 85%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact input {
+        display: flex;
+        width: 250px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 780px) and (min-width: 768px) {
+    #content {
+        position: relative;
+        left: 2.5%;
+    }
+
+    .shape {
+        width: 95%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact input {
+        display: flex;
+        width: 100%;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 768px) and (min-width: 767px) {
+    #content {
+            position: relative;
+            left: 0px;
+    }
+    
+    .shape {
+        width: 95%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact input {
+        display: flex;
+        width: 200px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 767px) and (min-width: 567px) {
+    #content {
+            position: relative;
+            right: 4%;
+    }
+    
+    .shape {
+        width: 95%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact input {
+        display: flex;
+        width: 400px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 566px) and (min-width: 425px) {
+    #content {
+         position: relative;
+         right: 8%;
+    }
+    
+    .shape {
+        width: 95%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact input {
+        display: flex;
+        width: 400px;
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 425px) and (min-width: 375px) {
+    #content {
+         position: relative;
+         right: 9%;
+    }
+    
+    .shape {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact input {
+        display: flex;
+        width: 300px;
+        padding: 15px;
+    }
+
+    .explain{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 375px) and (min-width: 320px) {
+    #content {
+         position: relative;
+         right: 12%;
+    }
+    
+    .shape {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact input {
+        display: flex;
+        width: 300px;
+        padding: 15px;
+    }
+
+    .explain{
+        display: grid;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 320px){
+    #content {
+         position: relative;
+         right: 10%;
+    }
+    
+    .shape {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .solution-place textarea {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .contact{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contact input {
+        display: flex;
+        width: 200px;
+        padding: 15px;
+    }
+
+    .explain{
+        display: grid;
+        justify-content: center;
+    }
+}
